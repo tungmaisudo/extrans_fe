@@ -29,12 +29,14 @@ import "./assets/css/translate.css";
 
 import AdminLayout from "layouts/Admin.jsx";
 import Translate from "./layouts/Translate";
+import Test from "./layouts/Test";
 
 ReactDOM.render(
     <BrowserRouter>
         <Switch>
             <Route path="/admin" render={props => <AdminLayout {...props} />}/>
             <Route path="/translate/:translate" component={Translate} />}/>
+            <Route path="/test" render={props => <Test />} />}/>
             <Redirect from="/" to="/admin/dashboard"/>
         </Switch>
     </BrowserRouter>,

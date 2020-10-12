@@ -16,7 +16,7 @@ class Translate extends Component {
 
     componentDidMount() {
         const search = this.props.match.params.translate;
-        axios.get("http://localhost:8080/translate/" + search)
+        axios.get("http://139.180.155.106/api/translate/" + search)
             .then((result) => {
                     const data = result.data;
                     this.setState({
